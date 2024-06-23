@@ -1,7 +1,7 @@
 if  game.ReplicatedStorage.GameData.LatestRoom.Value ~= 50 then
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-else
 Wait(1)
+end
 local Spawner = loadstring(game:HttpGet('https://raw.githubusercontent.com/MuhXd/DoorSuff/main/OtherSuff/DoorEntitySpawn%2BSource'))()
 
 
@@ -100,7 +100,7 @@ print("Hiding: "..tostring(Hiding))
 end
        
 entity.Debug.OnEntitySpawned = function()
-wait(10)
+wait(40)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/hgh/main/gcvg"))()
 end
 
