@@ -1,3 +1,7 @@
+if  game.ReplicatedStorage.GameData.LatestRoom.Value ~= 50 then
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+else
+Wait(1)
 local Spawner = loadstring(game:HttpGet('https://raw.githubusercontent.com/MuhXd/DoorSuff/main/OtherSuff/DoorEntitySpawn%2BSource'))()
 
 
@@ -7,7 +11,7 @@ local entity = Spawner.createEntity({
     CustomName = "Clock", -- Custom name of your entity
     Model = "rbxassetid://14700391347", -- Can be GitHub file or rbxassetid
     Speed = 100000, -- Percentage, 100 = default Rush speed
-    DelayTime = 80, -- Time before starting cycles (seconds)
+    DelayTime = 66, -- Time before starting cycles (seconds)
     HeightOffset = 0.5,
     CanKill = false,
     NoDieOnCrouching = false,
@@ -17,7 +21,7 @@ local entity = Spawner.createEntity({
     OneRoom = true,
     DieOnLook = false,
     BreakLights = false,
-    BackwardsMovement = false,
+    BackwardsMovement = true,
      MovementDeath = {
         false, -- Turned On?
         '1',  --- '1'= 'Instant Without Being Looked out' | '2' = 'With Being Looked At'
