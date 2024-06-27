@@ -49,8 +49,8 @@ local entity = Spawner.createEntity({
         Duration = 3
     },
     Cycles = {
-        Min = 100,
-        Max = 100,
+        Min = 70,
+        Max = 70,
         Delay = 3
     },
     CamShake = {
