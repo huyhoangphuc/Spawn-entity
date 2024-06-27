@@ -37,7 +37,7 @@ local sound = Instance.new("Sound")
 local entity = Spawner.createEntity({
     CustomName = "Bitera",
     Model = "rbxassetid:////16596150898", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
-    Speed = 50,
+    Speed = 30,
     MoveDelay = 5,
     HeightOffset = 1,
     CanKill = true,
@@ -49,8 +49,8 @@ local entity = Spawner.createEntity({
         Duration = 3
     },
     Cycles = {
-        Min = 20,
-        Max = 20,
+        Min = 100,
+        Max = 100,
         Delay = 3
     },
     CamShake = {
