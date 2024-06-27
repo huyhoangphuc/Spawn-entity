@@ -14,8 +14,6 @@ Test = 1
 local SelfModules = {
     Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))(),
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/door/main/50"))()
-wait() 
 local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/a120doors/main/jghgifgy"))()
 
 ---====== Create entity ======---
@@ -42,15 +40,15 @@ local entity = Spawner.createEntity({
     HeightOffset = 1,
     CanKill = true,
     KillRange = 20,
-    SpawnInFront = false,
+    SpawnInFront = true,
     ShatterLights = false,
     FlickerLights = {
-        Enabled = false,
-        Duration = 3
+        Enabled = true,
+        Duration = 100
     },
     Cycles = {
-        Min = 70,
-        Max = 70,
+        Min = 30,
+        Max = 30,
         Delay = 3
     },
     CamShake = {
