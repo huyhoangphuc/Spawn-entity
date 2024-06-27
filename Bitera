@@ -15,7 +15,9 @@ local SelfModules = {
     Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))(),
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/door/main/50"))()
-wait() 
+wait(1) 
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("BITERA MINIBOSS ROOM 50",true)
+wait(5)
 local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/a120doors/main/jghgifgy"))()
 
 ---====== Create entity ======---
@@ -38,7 +40,7 @@ local entity = Spawner.createEntity({
     CustomName = "Bitera",
     Model = "rbxassetid:////16596150898", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
     Speed = 30,
-    MoveDelay = 10,
+    MoveDelay = 5,
     HeightOffset = 1,
     CanKill = true,
     KillRange = 20,
