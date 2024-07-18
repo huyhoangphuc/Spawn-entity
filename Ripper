@@ -1,21 +1,51 @@
-local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/a120doors/main/jghgifgy"))()
+--effect
+wait()
+coroutine.wrap(function()
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
 
----====== Create entity ======---
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(cf)
+	camara.CFrame = camara.CFrame * cf
+end)
+
+
+camShake:Start()
+camShake:Shake(CameraShaker.Presets.Earthquake)
 
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(255, 0, 0)
 game.Lighting.MainColorCorrection.Contrast = 1
 local tween = game:GetService("TweenService")
 tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
 local TweenService = game:GetService("TweenService")
-local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(80),{TintColor = Color3.fromRGB(255, 0, 0)})
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(80),{TintColor = Color3.fromRGB(255, 255, 255)})
 TW:Play()
+
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camara = game.Workspace.CurrentCamera
+
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(cf)
+	camara.CFrame = camara.CFrame * cf
+end)
+
+
+camShake:Start()
+camShake:Shake(CameraShaker.Presets.Earthquake)
+end)()
+--
+
+--R1
+coroutine.wrap(function()
+wait(0.2)
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/a120doors/main/jghgifgy"))()
+
+---====== Create entity ======---
 
 local entity = Spawner.createEntity({
     CustomName = "Ripper",
     Model = "rbxassetid:////12262768551", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
-    Speed = 300,
-    MoveDelay = 9.8,
-    HeightOffset = 9,
+    Speed = 200,
+    MoveDelay = 5,
+    HeightOffset = 4,
     CanKill = true,
     KillRange = 100,
     SpawnInFront = false,
@@ -47,7 +77,7 @@ entity.Debug.OnEntitySpawned = function()
 end
 
 entity.Debug.OnEntityDespawned = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/a120doors/main/hwbe"))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoangphuc/jee/main/Ace%20ripper'))()
 end
 entity.Debug.OnEntityStartMoving = function()
     print("Entity started moving")
@@ -80,3 +110,166 @@ end
 ---====== Run entity ======---
 
 Spawner.runEntity(entity)
+end)()
+--
+
+--R2
+coroutine.wrap(function()
+wait(0.3)
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/a120doors/main/jghgifgy"))()
+
+---====== Create entity ======---
+
+local entity = Spawner.createEntity({
+    CustomName = "Ripper",
+    Model = "rbxassetid:////12262768551", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
+    Speed = 200,
+    MoveDelay = 5,
+    HeightOffset = 4,
+    CanKill = true,
+    KillRange = 100,
+    SpawnInFront = false,
+    ShatterLights = false,
+    FlickerLights = {
+        Enabled = false,
+        Duration = 3
+    },
+    Cycles = {
+        Min = 1,
+        Max = 1,
+        Delay = 0
+    },
+    CamShake = {
+        Enabled = true,
+        Values = {1.5, 20, 0.1, 1},
+        Range = 100
+    },
+    ResistCrucifix = true,
+    BreakCrucifix = true,
+    DeathMessage = {"you die to A-10", "yee."},
+    IsCuriousLight = true
+})
+
+---====== Debug ======---
+
+entity.Debug.OnEntitySpawned = function()
+    print("Entity has spawned")
+end
+
+entity.Debug.OnEntityDespawned = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoangphuc/jee/main/Ace%20ripper'))()
+end
+entity.Debug.OnEntityStartMoving = function()
+    print("Entity started moving")
+end
+
+entity.Debug.OnEntityFinishedRebound = function()
+    print("Entity finished rebound")
+end
+
+entity.Debug.OnEntityEnteredRoom = function(room)
+    print("Entity entered room:", room)
+end
+
+entity.Debug.OnLookAtEntity = function()
+    print("Player looking at entity")
+end
+
+entity.Debug.OnDeath = function()
+    print("Player has died")
+end
+
+--[[
+    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
+
+    entity.Debug.OnUseCrucifix = function()
+        print("Custom crucifixion script here")
+    end
+]]--
+
+---====== Run entity ======---
+
+Spawner.runEntity(entity)
+end)()
+--
+
+--R3
+coroutine.wrap(function()
+wait(0.4)
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/a120doors/main/jghgifgy"))()
+
+---====== Create entity ======---
+
+local entity = Spawner.createEntity({
+    CustomName = "Ripper",
+    Model = "rbxassetid:////12262768551", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
+    Speed = 200,
+    MoveDelay = 5,
+    HeightOffset = 4,
+    CanKill = true,
+    KillRange = 100,
+    SpawnInFront = false,
+    ShatterLights = false,
+    FlickerLights = {
+        Enabled = false,
+        Duration = 3
+    },
+    Cycles = {
+        Min = 1,
+        Max = 1,
+        Delay = 0
+    },
+    CamShake = {
+        Enabled = true,
+        Values = {1.5, 20, 0.1, 1},
+        Range = 100
+    },
+    ResistCrucifix = true,
+    BreakCrucifix = true,
+    DeathMessage = {"you die to A-10", "yee."},
+    IsCuriousLight = true
+})
+
+---====== Debug ======---
+
+entity.Debug.OnEntitySpawned = function()
+    print("Entity has spawned")
+end
+
+entity.Debug.OnEntityDespawned = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoangphuc/jee/main/Ace%20ripper'))()
+end
+entity.Debug.OnEntityStartMoving = function()
+    print("Entity started moving")
+end
+
+entity.Debug.OnEntityFinishedRebound = function()
+    print("Entity finished rebound")
+end
+
+entity.Debug.OnEntityEnteredRoom = function(room)
+    print("Entity entered room:", room)
+end
+
+entity.Debug.OnLookAtEntity = function()
+    print("Player looking at entity")
+end
+
+entity.Debug.OnDeath = function()
+    print("Player has died")
+end
+
+--[[
+    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
+
+    entity.Debug.OnUseCrucifix = function()
+        print("Custom crucifixion script here")
+    end
+]]--
+
+---====== Run entity ======---
+
+Spawner.runEntity(entity)
+end)()
+--
+
