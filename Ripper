@@ -77,7 +77,7 @@ entity.Debug.OnEntitySpawned = function()
 end
 
 entity.Debug.OnEntityDespawned = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoangphuc/jee/main/Ace%20ripper'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoangphuc/a120doors/main/bbbjg'))()
 end
 entity.Debug.OnEntityStartMoving = function()
     print("Entity started moving")
@@ -96,7 +96,7 @@ entity.Debug.OnLookAtEntity = function()
 end
 
 entity.Debug.OnDeath = function()
-    print("Player has died")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoangphuc/hehhe/main/jejwhhwhw'))()
 end
 
 --[[
@@ -115,17 +115,17 @@ end)()
 
 --R2
 coroutine.wrap(function()
-wait(0.3)
+wait(0.5)
 local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/a120doors/main/jghgifgy"))()
 
 ---====== Create entity ======---
 
 local entity = Spawner.createEntity({
-    CustomName = "Ripper",
+    CustomName = "Rier",
     Model = "rbxassetid:////12262768551", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
     Speed = 200,
     MoveDelay = 5,
-    HeightOffset = 4,
+    HeightOffset = 100,
     CanKill = true,
     KillRange = 100,
     SpawnInFront = false,
@@ -157,7 +157,7 @@ entity.Debug.OnEntitySpawned = function()
 end
 
 entity.Debug.OnEntityDespawned = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoangphuc/jee/main/Ace%20ripper'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoangphuc/a120doors/main/bbbjg'))()
 end
 entity.Debug.OnEntityStartMoving = function()
     print("Entity started moving")
@@ -195,17 +195,17 @@ end)()
 
 --R3
 coroutine.wrap(function()
-wait(0.4)
+wait(1)
 local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoangphuc/a120doors/main/jghgifgy"))()
 
 ---====== Create entity ======---
 
 local entity = Spawner.createEntity({
-    CustomName = "Ripper",
+    CustomName = "Rer",
     Model = "rbxassetid:////12262768551", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
     Speed = 200,
     MoveDelay = 5,
-    HeightOffset = 4,
+    HeightOffset = -100,
     CanKill = true,
     KillRange = 100,
     SpawnInFront = false,
@@ -237,7 +237,7 @@ entity.Debug.OnEntitySpawned = function()
 end
 
 entity.Debug.OnEntityDespawned = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoangphuc/jee/main/Ace%20ripper'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoangphuc/a120doors/main/bbbjg'))()
 end
 entity.Debug.OnEntityStartMoving = function()
     print("Entity started moving")
@@ -272,4 +272,3 @@ end
 Spawner.runEntity(entity)
 end)()
 --
-
